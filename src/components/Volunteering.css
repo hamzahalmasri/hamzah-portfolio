@@ -1,0 +1,107 @@
+.volunteering-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.volunteering-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vol-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.vol-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: #0A66C2;
+}
+
+.vol-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #0A66C2;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.vol-card:hover::before {
+    opacity: 1;
+}
+
+.vol-icon-box {
+    background-color: #eef3f8;
+    color: #0A66C2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.vol-content {
+    text-align: left;
+}
+
+.vol-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.vol-role {
+    display: block;
+    font-size: 0.95rem;
+    color: #0A66C2;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.vol-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .vol-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .vol-icon-box {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .vol-content {
+        text-align: center;
+    }
+
+    .vol-card:hover {
+        transform: translateY(-5px);
+    }
+}

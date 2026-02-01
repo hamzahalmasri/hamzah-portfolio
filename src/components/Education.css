@@ -1,0 +1,98 @@
+.education-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.edu-card {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #0A66C2;
+    transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.edu-icon-box {
+    background-color: #eef3f8;
+    color: #0A66C2;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-right: 25px;
+}
+
+.edu-content {
+    flex: 1;
+}
+
+.edu-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.edu-degree {
+    display: block;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.edu-date {
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.date-icon {
+    font-size: 0.85rem;
+}
+
+.edu-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .edu-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .edu-icon-box {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .edu-date {
+        justify-content: center;
+    }
+}
