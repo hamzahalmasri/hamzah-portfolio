@@ -14,7 +14,13 @@ const Projects = () => {
             type: "(Course Project)",
             videoSrc: "/videos/tindog.mp4",
             technologies: ["HTML", "CSS", "Bootstrap"]
-        }
+        },
+        {
+            title: "Ramadan Kareem Website",
+            type: "(Personal Project)",
+            videoSrc: "/videos/ramadan.mp4",
+            technologies: ["React", "CSS3", "JavaScript", "Vite"],
+        },
     ];
 
     return (
