@@ -27,7 +27,7 @@ const Skills = () => {
         {
             category: "Automation",
             icon: <FaRobot />,
-            skills: ["n8n (Simple Workflow Automation)"]
+            skills: ["Simple Workflow Automation (n8n and Flowise AI)"]
         }
     ];
 

@@ -21,6 +21,13 @@ const Projects = () => {
             videoSrc: "/videos/ramadan.mp4",
             technologies: ["React", "CSS3", "JavaScript", "Vite"],
         },
+        {
+            title: "EAT.COM Website",
+            type: "(Personal Project)",
+            videoSrc: "/videos/Eat.mp4",
+            technologies: ["React", "Vite", "CSS", "JavaScript", "Node.js", "Express", "PostgreSQL", "Flowise AI (RAG)"],
+        },
+
     ];
 
     return (
@@ -57,6 +64,8 @@ const Projects = () => {
                                     ))}
                                 </div>
                             </div>
+
+
 
                         </div>
                     ))}
